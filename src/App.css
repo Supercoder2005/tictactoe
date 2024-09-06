@@ -1,10 +1,9 @@
 
 .board-container{
-  margin:20px;
+  margin:200px;
 }
 .board-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }

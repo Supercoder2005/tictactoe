@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Square = () => {
+const Square = (props) => {
     return(
-        <div 
+        <div
+            onClick={props.onClick} 
+
             style={{
                 border:"1px solid",
                 height:"100px",
@@ -11,8 +13,9 @@ const Square = () => {
                 justifyContent:"center",
                 alignItems:"center",
             }}
-        classname='square'>
-            <h5>X</h5>
+            className='square'
+        >
+            <h5>{props.value}</h5>
 
         </div>
     );
